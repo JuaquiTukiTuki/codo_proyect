@@ -13,6 +13,11 @@
     font-size: 1em;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+}
+
 header {
     background-color: var(--celeste);
 }
@@ -25,12 +30,26 @@ footer {
     background-color: var(--azul);
 }
 
-.nuestroEquipo {
+#inicio, #servicios, #nuestro_equipo, #chamuyo, #contacto {
     background-color: var(--naranja);
-    flex-direction: column;
-    padding: 1em;
+    padding: 5em;
+    margin: 2em;
+    border-radius: 5%;
 }
 
+/* QUE OFRECEMOS SECCION */
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+
+.cajita_servicio {
+    padding: 1em;
+    margin: 1em;
+    background-color: #03a5a5;
+}
+
+/* EQUIPO SECCION */
 .miembros {
     display: flex;
     flex-direction: row;
