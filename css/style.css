@@ -1,24 +1,40 @@
 :root {
-    --blanco: #fff
-
+    --azul: #2d4b8a;
+    --celeste: #3c6ec6;
+    --amarillo: #ffc100;
+    --naranja: #fe6603;
+    --turquesa: #03a5a5;
 }
 
-html {
+* {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: var(--celeste);
+}
+
+main {
+    background-color: var(--amarillo);
 }
 
 footer {
-    margin: 0
-    ;
-    background-color: aqua;
+    background-color: var(--azul);
 }
 
+.nuestroEquipo {
+    background-color: var(--naranja);
+    flex-direction: column;
+    padding: 1em;
+}
 
+.miembros {
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+    padding: 2em;
 
-
-
-
-@media screen {
-    
 }
