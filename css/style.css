@@ -1,39 +1,87 @@
+/* Diseñamos como para celu, desp con querys adaptamos */
 :root {
-    --azul: #2d4b8a;
-    --celeste: #3c6ec6;
-    --amarillo: #ffc100;
-    --naranja: #fe6603;
-    --turquesa: #03a5a5;
+    /* Paleta acorde al logo */
+    --azul_oscuro: #23476B;
+    --claro: #A3CAEE;
+    --base: #4A95E0;
+    --blanco: #fff;
+    --base_oscuro: #3973AD;
+
+
+    /* Paleta marrón */
+    /* --icterine: #f7f052ff;
+    --orange-wheel: #f28123ff;
+    --syracuse-red-orange: #d34e24ff;
+    --caf-noir: #563f1bff;
+    --myrtle-green: #38726cff; */
 }
 
 * {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
 }
 
-body {
+html {
     width: 100%;
-    height: 100%;
+    font-size: 20px;
+    color: var(--base);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco);
+    flex-wrap: wrap;
 }
 
+/* HEADER Y NAVEGACION */
 header {
-    background-color: var(--celeste);
+    background-color: var(--claro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
 }
 
-main {
-    background-color: var(--amarillo);
+h1 {
+    color: var(--blanco);
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 5%;
+    display: flex;
+}
+
+li a {
+    display: block;
+    color: var(--blanco);
+    width: 6rem;
+    height: 3rem;
+    background-color: var(--base_oscuro);
+    padding: 1%;
+}
+
+/* FOOTER */
 footer {
-    background-color: var(--azul);
+    background-color: var(--azul_oscuro);
 }
 
-#inicio, #servicios, #nuestro_equipo, #chamuyo, #contacto {
-    background-color: var(--naranja);
-    padding: 5em;
-    margin: 2em;
+/* SECCIONES */
+#inicio,
+#servicios,
+#nuestro_equipo,
+#chamuyo,
+#contacto {
+    background-color: var(--base_oscuro);
+    color: var(--blanco);
+    padding: 0.5rem;
+    margin: 4%;
     border-radius: 5%;
 }
 
@@ -46,7 +94,7 @@ footer {
 .cajita_servicio {
     padding: 1em;
     margin: 1em;
-    background-color: #03a5a5;
+    background-color: var(--base);
 }
 
 /* EQUIPO SECCION */
@@ -57,3 +105,37 @@ footer {
     padding: 2em;
 
 }
+
+/* CSS RESPONSIVE (QUERYS) */
+/* Muy grande */
+@media (min-width: 1200px) {
+    ul {
+        flex-direction: row;
+    }
+    li {
+        padding: 0;
+    }
+}
+/* Compus, pantallas, grande */
+@media (min-width: 992px) {
+    ul {
+        flex-direction: row;
+    }
+    li {
+        padding: 0;
+    }
+}
+/* Tablets - mediano */
+@media (min-width: 768px) {
+    ul {
+        flex-direction: row;
+    }
+    li {
+        padding: 0;
+    }
+}
+/* celu acostado - pequeño */
+@media (min-width: 576px) {
+    
+}
+
