@@ -1,11 +1,20 @@
 /* Diseñamos como para celu, desp con querys adaptamos */
 :root {
     /* Paleta acorde al logo */
-    --azul_oscuro: #23476B;
+    /* --azul_oscuro: #23476B;
     --claro: #A3CAEE;
     --base: #4A95E0;
     --blanco: #fff;
-    --base_oscuro: #3973AD;
+    --base_oscuro: #3973AD; */
+
+    /* Paleta violeta */
+    --violeta_claro: #9FBAE0;
+    --azul_fuerte: #014AAD;
+    --celeste: #03A5A5;
+    --violeta_oscuro: #0356AC;
+    --turquesa: #0592A6;
+    --azul: #0475A9;
+    --blanco: #fff;
 
 
     /* Paleta marrón */
@@ -33,7 +42,8 @@ html {
 
 /* HEADER Y NAVEGACION */
 header {
-    background-color: var(--claro);
+    /* background-color: var(--claro); */
+    background-color: var(--violeta_claro);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,7 +70,6 @@ ul {
 
 li {
     display: flex;
-    
     align-items: center;
 }
 
@@ -71,13 +80,16 @@ li a {
     height: 3rem;
     font-weight: bold;
     text-decoration: none;
-    background-color: var(--base_oscuro);
+    /* background-color: var(--base_oscuro); */
+    background-color: var(--azul);
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 li a:hover {
-    background-color: var(--base);
+    /* background-color: var(--base); */
+    background-color: var(--azul_fuerte);
     color: white;
 }
 
@@ -94,7 +106,8 @@ li a:hover:not(.presionado) {
 
 /* FOOTER */
 footer {
-    background-color: var(--azul_oscuro);
+    /* background-color: var(--azul_oscuro); */
+    background-color: var(--violeta_oscuro);
 }
 
 /* SECCIONES */
@@ -103,7 +116,8 @@ footer {
 #nuestro_equipo,
 #chamuyo,
 #contacto {
-    background-color: var(--base_oscuro);
+    /* background-color: var(--base_oscuro); */
+    background-color: var(--turquesa);
     color: var(--blanco);
     padding: 0.5rem;
     margin: 4%;
@@ -118,9 +132,11 @@ footer {
 }
 
 .cajita_servicio {
+    width: 20rem;
     padding: 1em;
     margin: 1em;
-    background-color: var(--base);
+    /* background-color: var(--base); */
+    background-color: var(--celeste);
 }
 
 /* EQUIPO SECCION */
@@ -135,8 +151,11 @@ footer {
 /* CSS RESPONSIVE (QUERYS) */
 /* Muy grande */
 @media (min-width: 1200px) {
+    /* HEADER Y NAV */
     header {
         flex-direction: row;
+        /* position: fixed;
+        width: 100%; */
     }
 
     nav {
@@ -156,9 +175,12 @@ footer {
 
 /* Compus, pantallas, grande */
 @media (min-width: 992px) {
+    /* HEADER Y NAV */
     header {
         flex-direction: row;
         align-content: flex-end;
+        /* position: fixed;
+        width: 100%; */
     }
 
     nav {
@@ -174,10 +196,15 @@ footer {
     li {
         padding: 0;
     }
+
+    main {
+        margin-top: var(--header_height);
+    }
 }
 
 /* Tablets - mediano */
 @media (min-width: 768px) {
+    /* HEADER Y NAV */
     nav {
         display: flex;
         flex-direction: row;
