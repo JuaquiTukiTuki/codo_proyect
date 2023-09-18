@@ -12,6 +12,7 @@
 **Servicios de desarrollo Web**: *Web Elevate Solutions*
 
 Empresa de desarrollo web.
+![PDF_de_muestra](web_elevate_solutions.pdf)
 
 ## Miembros
 + Joaquín Ignacio Riffel
