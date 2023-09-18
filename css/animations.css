@@ -1,0 +1,26 @@
+/* ACA ANIMACIONES */
+
+/* HEADER Y NAV */
+@keyframes desplaza_borde {
+    from {
+        border-end-end-radius: 50% 0%;
+        border-end-start-radius: 50% 0%
+    }
+
+    to {
+        border-end-end-radius: 50% 22%;
+        border-end-start-radius: 50% 22%
+    }
+}
+
+/* @keyframes aparece_magicamente {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+        background-color: blue;
+    }
+} */
+

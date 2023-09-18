@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Elevate Solutions</title>
     <!-- Icono -->
-    <link rel="icon" type="images/png" href="images/logo.png"/>
+    <link rel="icon" type="images/png" href="images/logo.png" />
     <!-- conectar css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bc24198622.js" crossorigin="anonymous"></script>
     <!-- Fuente -->
@@ -21,20 +22,32 @@
     <header>
         <!-- <img src="images/logo_nav.jpg" alt="logo"> -->
         <!-- barra navegacion -->
-        <h1>Web Elevate Solutions</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nuestro_equipo">Nuestro Equipo</a></li>
-                <li><a href="#elegirnos">Por qué elegirnos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="nav_bar">
+            <div class="nav_bar_top">
+                <i class="fa-solid fa-list lista_btn"></i>
+                <img src="images/logo.png" alt="logo" id="nav_bar_img">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <nav class="nav_bar_list">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#elegirnos">Por qué elegirnos</a></li>
+                    <li><a href="#nuestro_equipo">Nuestro Equipo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_presentacion">
+            <div class="header_texto">
+                <h1>Somos socios en tu viaje al éxito</h1>
+                <a href="#inicio" class="violet_btn">Empezar</a>
+            </div>
+            <img src="images/inicio.png" alt="img_inicio" id="img_inicio">
+        </div>
     </header>
     <main>
-        
+
         <section id="inicio">
             <h2>Somos Web Elevate Solutions</h2>
             <h3>Transformamos Visiones en Experiencias Digitales Excepcionales</h3>
@@ -81,7 +94,7 @@
         </section>
         <section id="elegirnos">
             <h2>Por qué elegirnos</h2>
-            
+
             <ul>
                 <li>Trayectoria probada en la entrega de proyectos exitosos.</li>
                 <li>Enfoque personalizado y atención individual a cada cliente.</li>
@@ -128,11 +141,11 @@
         Redes
         <section id="creditos">
             <h2>Créditos</h2>
-            
+
         </section>
 
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
