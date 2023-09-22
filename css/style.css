@@ -149,6 +149,7 @@ li a:hover:not(.presionado) {
 h1 {
     font-size: 2rem;
     padding: 1rem;
+    color: var(--violeta_oscuro);
 }
 
 .violet_btn {
@@ -247,6 +248,7 @@ footer {
         position: relative;
         top: -6rem;
         left: 1rem;
+        max-width: fit-content;
     }
 
     .nav_bar_list ul li a {
@@ -291,6 +293,7 @@ footer {
         position: relative;
         top: -6rem;
         left: 1rem;
+        max-width: fit-content;
     }
 
     .nav_bar_list ul li a {
@@ -339,6 +342,7 @@ footer {
         position: relative;
         top: -6rem;
         left: 1rem;
+        max-width: fit-content;
     }
 
     .nav_bar_list ul li a {
