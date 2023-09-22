@@ -158,6 +158,38 @@ h1 {
     
 }
 
+.lista-elegirnos {
+
+    color: #0592A6 ;
+    text-align: center;
+
+}
+
+h2 {
+ color: #014AAD;
+ text-align: center;
+}
+
+.imagen-ideas {
+    width: 300px;
+    height: auto;
+}
+
+h3 {
+    color:#014AAD ;
+}
+
+.contenido-derecha p {
+    background-color: white;
+    color: #0475A9;
+}
+
+.parrafo-marketing {
+    color: #0475A9;
+    background-color: white;
+}
+
+
 
 
 .contenido-derecha {
@@ -201,7 +233,7 @@ elegirnos {
     align-self: center;
     color: var(--blanco);
     margin: 0.2rem;
-    background-color: var(--violeta_oscuro);
+    background-color: #4279C0;  /*var(--violeta_oscuro);*/
     border-radius: 1rem;
     padding: 0.5rem;
     font-weight: bold;
