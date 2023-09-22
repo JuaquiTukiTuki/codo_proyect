@@ -151,6 +151,50 @@ h1 {
     padding: 1rem;
 }
 
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.contenido-derecha {
+    flex: 1;
+    text-align: left;
+}
+
+.imagen-izquierda {
+    flex: 1;
+    text-align: left;
+}
+
+elegirnos {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.contenido-elegirnos {
+    text-align: center;
+    margin-left: auto;
+    margin: auto;
+    padding-left: 0;
+}
+
+.lista-elegirnos li {
+    list-style: circle;
+    margin-bottom: 10px;
+}
+
+.imagen-ideas {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 50%;
+    height: auto;
+}
+
+
 .violet_btn {
     display: flex;
     align-self: center;
