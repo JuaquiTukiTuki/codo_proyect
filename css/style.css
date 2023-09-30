@@ -190,7 +190,13 @@ h3 {
 }
 
 
+.card-title {
+    color:#014AAD;
+}
 
+.card-text {
+    color: #0475A9;
+}
 
 .contenido-derecha {
     flex: 1;
