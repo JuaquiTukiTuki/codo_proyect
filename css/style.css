@@ -144,6 +144,13 @@ li a:hover:not(.presionado) {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    padding-inline-start: 40px;
+}
+
+.header_texto h1{
+    font-size: 42px;
+    line-height: 1.28em;
+    text-align: left;   
 }
 
 h1 {
@@ -158,25 +165,38 @@ h1 {
     
 }
 
-.lista-elegirnos {
-
-    color: #0592A6 ;
-    text-align: center;
-
-}
+/*TODAS LAS SECCIONES*/
 
 h2 {
- color: #014AAD;
- text-align: center;
+    color: #014AAD;
+    text-align: center;
 }
 
-.imagen-ideas {
-    width: 300px;
-    height: auto;
+.card-container {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
 }
+
+.card-title {
+    color:#014AAD;
+    font-size: 21px;
+    
+}
+
+.card-text {
+    color: #0475A9;
+    font-size: 20px;
+    
+}
+
+/*SECCION NUESTRA AGENCIA*/
 
 h3 {
-    color:#014AAD ;
+     color:#014AAD ;
+}
+
+.contenido-derecha {
+    padding-inline-start: 3cm;
 }
 
 .contenido-derecha p {
@@ -184,27 +204,6 @@ h3 {
     color: #0475A9;
     line-height: 1.6;
     max-width: 375px;
-}
-
-.header_texto h1{
-    font-size: 42px;
-    line-height: 1.28em;
-    text-align: left;
-    
-}
-
-.parrafo-marketing {
-    color: #0475A9;
-    background-color: white;
-}
-
-
-.card-title {
-    color:#014AAD;
-}
-
-.card-text {
-    color: #0475A9;
 }
 
 .contenido-derecha {
@@ -216,32 +215,75 @@ h3 {
 .imagen-izquierda {
     flex: 1;
     text-align: left;
+    width: 500px;
 }
 
-elegirnos {
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
+/*SECCION NUESTROS SERVICIOS*/
+
+
+/*SECCION POR QUE ELEGIRNOS*/
+
+
 .contenido-elegirnos {
-    text-align: center;
-    margin-left: auto;
-    margin: auto;
-    padding-left: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+
+.lista-elegirnos {
+    color: #0592A6 ;
+    align-content: center;
+    align-items: center;
+    line-height: 2;
 }
 
 .lista-elegirnos li {
-    list-style: circle;
-    margin-bottom: 10px;
+    line-height: 2;
+    text-align: center;
+    list-style: none;
+    
 }
 
+.lista-elegirnos li::before {
+    content: "✔️";
+    display: inline-block;
+    width: 1em; 
+    text-align: right;
+    margin-right: 0.5em;
+
+}
+
+
+
+
 .imagen-ideas {
+    width: 320px;
+    height: auto;
+    padding-inline-end: 40px;
     display: block;
     margin-left: auto;
     margin-right: 0;
     max-width: 50%;
     height: auto;
 }
+
+
+/*SECCION NUESTRO EQUIPO*/
+
+/*SECCION CONTACTO*/
+
+/*SECCION CREDITOS*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 .violet_btn {
@@ -254,6 +296,7 @@ elegirnos {
     padding: 0.5rem;
     font-weight: bold;
     text-decoration: none;
+    
 }
 
 .violet_btn:hover {
