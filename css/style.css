@@ -24,6 +24,11 @@ html {
     flex-direction: column;
     background-color: var(--blanco);
     flex-wrap: wrap;
+    animation: aparicion 1000ms;
+}
+
+h3 {
+    font-weight: 600 !important;
 }
 
 /* HEADER Y NAVEGACION */
@@ -65,7 +70,6 @@ header {
     visibility: collapse;
 }
 
-
 .nav_bar_list ul {
     list-style-type: none;
     margin: 0;
@@ -97,7 +101,6 @@ header {
 }
 
 .nav_bar_list ul li a:hover {
-    /* background-color: var(--base); */
     background-color: var(--azul_fuerte);
     color: white;
 }
@@ -108,7 +111,8 @@ li a.presionado {
     color: white;
 }
 
-.fa-list, .fa-magnifying-glass {
+.fa-list,
+.fa-magnifying-glass {
     color: var(--violeta_oscuro);
 }
 
@@ -119,6 +123,7 @@ li a:hover:not(.presionado) {
 
 .visible {
     visibility: visible;
+    animation: aparicion 900ms linear;
 }
 
 /* HEADER PRESENTACIÓN */
@@ -210,13 +215,9 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    font-weight: 600 !important;
-}
-
 /*  */
 .contenedor,
-.miembros {
+.nuestro_equipo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -244,17 +245,53 @@ h3 {
     position: relative;
     bottom: 40px;
 }
-/* SECCION EQUIPO */
 
+/* SECCION EQUIPO */
+.miembros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.miembro_div {
+    background-color: var(--violeta_claro);
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    animation: sombra_div 1s ease 1s 1 normal forwards;
+    /* animation: desplaza_borde 3s ease 1s 1 normal forwards; */
+}
+
+.miembro_img {
+    border-radius: 100%;
+    max-width: 300px;
+    margin: 5px 14px 10px 10px;
+    width: 90%;
+}
 
 /* FOOTER */
 footer {
-    background-color: var(--violeta_oscuro);
+    background-color: var(--azul_fuerte);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* CONTACTO UBICACION */
+.contacto_ubicacion {
+    max-width: 500px;
+}
+
+.iframe_map {
+    width: 90%;
 }
 
 /* CSS RESPONSIVE (QUERYS) */
 /* Muy grande */
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
     /* HEADER Y NAV */
     header {
@@ -298,15 +335,18 @@ footer {
     }
 
     /* MAIN CONTENT */
-    
+
     .cajita_servicio {
         width: 30%
     }
-    
+
+    .miembro_div {
+        width: 23%;
+    }
 }
 
 /* Compus, pantallas, grande */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width:1200px) {
 
     /* HEADER Y NAV */
     header {
@@ -354,13 +394,17 @@ footer {
         width: 29%
     }
 
+    .miembro_div {
+        width: 29%;
+    }
+
     /* main {
         margin-top: var(--header_height);
     } */
 }
 
 /* Tablets - mediano */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width:992px) {
 
     /* HEADER Y NAV */
     header {
@@ -403,7 +447,13 @@ footer {
         top: -5rem;
     }
 
+    /* main content */
+    .miembro_div {
+        width: 30%;
+    }
+
 }
 
 /* celu acostado - pequeño */
-@media (min-width: 576px) {}
+@media only screen and (min-width: 576px) and (max-width:778px) {
+}
