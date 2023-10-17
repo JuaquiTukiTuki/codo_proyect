@@ -174,14 +174,12 @@ img {
 }
 
 
-/* SECCIONES */
+/* SECCIONES MAIN*/
 #inicio,
 #servicios,
 #elegirnos,
-#nuestro_equipo,
-#chamuyo,
-#contacto,
-#creditos {
+#nuestro_equipo
+ {
     /* background-color: var(--base_oscuro); */
     background-color: var(--turquesa);
     color: var(--blanco);
@@ -274,19 +272,66 @@ h2 {
 /* FOOTER */
 footer {
     background-color: var(--azul_fuerte);
+    color: var(--blanco)
 }
 
 footer p {
     margin: 0;
 }
 
-/* CONTACTO UBICACION */
-.contacto_ubicacion {
-    max-width: 500px;
+.footer_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
+.footer_caja {
+    max-width: 500px;
+    background-color: var(--violeta_oscuro);
+    width: 100%;
+    margin: 0px 10px 20px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.footer_title {
+    background-color: var(--azul_fuerte);
+    box-shadow: 0px -20px 20px -5px var(--violeta_oscuro) inset;
+    width: 100%;
+}
+
+/* CONTACTO SECCION */
+.fa-square-facebook,
+.fa-square-twitter,
+.fa-instagram,
+.fa-linkedin {
+    font-size: 50px;
+}
+
+.boton_contacto {
+    margin: 10px;
+}
+
+/* CONTACTO UBICACION */
 .iframe_map {
     width: 90%;
+}
+
+/* Copy */
+.copy {
+    font-size: 0.8rem;
+}
+.copy_div {
+    text-align: center;
+    background-color: var(--violeta_oscuro);
+}
+
+.footer_caja p {
+    padding: 0px 40px;
 }
 
 /* CSS RESPONSIVE (QUERYS) */
@@ -455,5 +500,4 @@ footer p {
 }
 
 /* celu acostado - pequeño */
-@media only screen and (min-width: 576px) and (max-width:778px) {
-}
+@media only screen and (min-width: 576px) and (max-width:778px) {}
