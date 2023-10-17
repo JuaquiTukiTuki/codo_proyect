@@ -1,11 +1,5 @@
 /* Diseñamos como para celu, desp con querys adaptamos */
 :root {
-    /* Paleta acorde al logo */
-    /* --azul_oscuro: #23476B;
-    --claro: #A3CAEE;
-    --base: #4A95E0;
-    --blanco: #fff;
-    --base_oscuro: #3973AD; */
 
     /* Paleta violeta */
     --violeta_claro: #9FBAE0;
@@ -14,15 +8,7 @@
     --violeta_oscuro: #0356AC;
     --turquesa: #0592A6;
     --azul: #0475A9;
-    --blanco: #fff;
-
-
-    /* Paleta marrón */
-    /* --icterine: #f7f052ff;
-    --orange-wheel: #f28123ff;
-    --syracuse-red-orange: #d34e24ff;
-    --caf-noir: #563f1bff;
-    --myrtle-green: #38726cff; */
+    --blanco: #fff
 }
 
 * {
@@ -42,11 +28,10 @@ html {
 
 /* HEADER Y NAVEGACION */
 header {
-    /* background-color: var(--claro); */
     background-color: var(--violeta_claro);
     display: flex;
     flex-direction: column;
-    height: 92vh;
+    min-height: 100vh;
     animation: desplaza_borde 3s ease 1s 1 normal forwards;
 }
 
@@ -123,6 +108,10 @@ li a.presionado {
     color: white;
 }
 
+.fa-list, .fa-magnifying-glass {
+    color: var(--violeta_oscuro);
+}
+
 li a:hover:not(.presionado) {
     background-color: var(--violeta_oscuro);
     color: white;
@@ -137,6 +126,7 @@ li a:hover:not(.presionado) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .header_texto {
@@ -147,8 +137,10 @@ li a:hover:not(.presionado) {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
+    font-weight: bolder !important;
     padding: 1rem;
+    font-weight: bolder;
     color: var(--violeta_oscuro);
 }
 
@@ -168,31 +160,58 @@ h1 {
     background-color: var(--turquesa);
 }
 
-#img_inicio {
-    display: block;
-    width: 90%;
-    max-width: fit-content;
-    padding: 1rem;
+.img_inicio {
+    text-align: center;
 }
 
-/* FOOTER */
-footer {
-    /* background-color: var(--azul_oscuro); */
-    background-color: var(--violeta_oscuro);
+img {
+    max-width: 100%;
 }
+
 
 /* SECCIONES */
 #inicio,
 #servicios,
+#elegirnos,
 #nuestro_equipo,
 #chamuyo,
-#contacto {
+#contacto,
+#creditos {
     /* background-color: var(--base_oscuro); */
     background-color: var(--turquesa);
     color: var(--blanco);
-    padding: 0.5rem;
-    margin: 4%;
-    border-radius: 5%;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+/* SECCION INICIO */
+h2 {
+    background-color: var(--azul);
+    font-weight: bold !important;
+    padding: 4px;
+    text-align: center;
+    box-shadow: 0px -20px 20px -5px var(--turquesa) inset;
+    text-shadow: -1px 0 var(--violeta_oscuro), 0 1px var(--violeta_oscuro), 1px 0 var(--violeta_oscuro), 0 -1px var(--violeta_oscuro);
+    padding-top: 10px;
+}
+
+#inicio p {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* SECCION SERVICIOS */
+.cajita_servicio {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600 !important;
 }
 
 /*  */
@@ -201,22 +220,36 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: var(--violeta_oscuro);
 }
 
-.cajita_servicio {
-    width: 10rem;
-    padding: 1em;
-    margin: 1em;
-    /* background-color: var(--base); */
-    background-color: var(--celeste);
-}
-
-/* EQUIPO SECCION */
-.miembros {
+/* SECCION POR QUE ELEGIRNOS */
+.content_elegirnos {
     display: flex;
-    flex-direction: row;
-    margin: 2em;
-    padding: 2em;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.lista_elegirnos {
+    list-style: none;
+    padding-bottom: 40px;
+    padding: 0 10px 40px 10px;
+    margin: 0;
+}
+
+.ideas_img {
+    max-width: 25vh;
+    position: relative;
+    bottom: 40px;
+}
+/* SECCION EQUIPO */
+
+
+/* FOOTER */
+footer {
+    background-color: var(--violeta_oscuro);
 }
 
 /* CSS RESPONSIVE (QUERYS) */
@@ -263,6 +296,13 @@ footer {
         position: relative;
         top: -5rem;
     }
+
+    /* MAIN CONTENT */
+    
+    .cajita_servicio {
+        width: 30%
+    }
+    
 }
 
 /* Compus, pantallas, grande */
@@ -307,6 +347,11 @@ footer {
         flex-direction: row;
         position: relative;
         top: -5rem;
+    }
+
+    /* MAIN CONTENT */
+    .cajita_servicio {
+        width: 29%
     }
 
     /* main {
@@ -357,6 +402,7 @@ footer {
         position: relative;
         top: -5rem;
     }
+
 }
 
 /* celu acostado - pequeño */
