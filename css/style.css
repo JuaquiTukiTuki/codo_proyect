@@ -269,6 +269,11 @@ h2 {
     width: 90%;
 }
 
+.equipo_texto {
+    padding: 20px;
+    text-align: center;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--azul_fuerte);
