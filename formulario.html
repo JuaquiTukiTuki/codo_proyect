@@ -6,19 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Elevate Solutions</title>
     <!-- Icono -->
-    <link rel="icon" type="" href="images/" />
+    <link rel="icon" type="images/png" href="images/logo.png" />
     <!-- conectar css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bc24198622.js" crossorigin="anonymous"></script>
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header class="form_header">
+        <!-- barra navegacion -->
+        <div class="nav_bar">
+            <div class="nav_bar_top">
+                <i class="fa-solid fa-list lista_btn"></i>
+                <img src="images/logo.png" alt="logo" id="nav_bar_img">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <nav class="nav_bar_list">
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#elegirnos">Por qué elegirnos</a></li>
+                    <li><a href="index.html#nuestro_equipo">Nuestro Equipo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="bbdd.php" method="post" target="_self">
+            <fieldset>
+                <legend>CONTACTO</legend>
+                <label for="name">
+                    <input type="text" name="name" value="" placeholder="Nombre Completo" id="name" maxlength="60"
+                        required>
+                </label>
+                <label for="mail">
+                    <input type="email" name="email" id="email" placeholder="Correo" required>
+                </label>
+                <label for="tel">
+                    <input type="tel" id="tel" name="tel" placeholder="Núm. Teléfono" maxlength="16">
+                </label>
+                <label for="message">
+                    <textarea name="message" id="message" maxlength="1000" placeholder="Escribe tu mensaje..." rows="5"
+                        columns="50" required></textarea>
+                </label>
+                <div class="form_bottom">
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Enviar">
+                </div>
 
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="footer_div">
+            <section class="footer_caja" id="contacto">
+                <h2 class="footer_title">Contacto</h2>
+                <p>LLena el siguiente formulario para contactarte con nosotros vía Email</p>
+                <a href="formulario.html" id="anchor_link">Formulario</a>
+                <h3 class="titulo-seccion">Nuestras Redes</h3>
+                <div class="redes_sociales">
+                    <a href="http://www.facebook.com/" class="boton_contacto">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+
+                    <a href="http://www.twitter.com/" class="boton_contacto">
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </a>
+
+                    <a href="http://www.instagram.com/" class="boton_contacto">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="http://www.linkedin.com/" class="boton_contacto">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+
+
+            </section>
+            <div class="footer_caja">
+                <h2 class="footer_title">Ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24376.21408268118!2d-14.376981889915612!3d-7.946643084969431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5b0f5606a989347%3A0x81767d1f07797932!2sNASA%20Tracking%20Station!5e0!3m2!1ses-419!2sar!4v1697567815772!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border: 1px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="iframe_map"></iframe>
+            </div>
+            <!--SECCION CREDITOS-->
+            <section class="footer_caja">
+                <h2 class="footer_title">Créditos</h2>
+                Nuestro Equipo Imágenes:
+                <a href="http://www.freepik.com/">Freepik.com</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel deserunt possimus amet odio
+                    sapiente autem eveniet ullam eaque. Ipsum culpa provident doloremque repellat? Officiis nemo
+                    voluptate aut perspiciatis mollitia voluptates non, illo sed ex incidunt aliquid quo eius qui.
+
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet facere excepturi harum earum
+                    aperiam deserunt, nam vel consectetur laboriosam voluptatibus rem deleniti dicta est ullam. Magni
+                    vel deserunt ipsum reprehenderit fugiat libero odit recusandae autem? Quibusdam eveniet veniam
+                    provident ex. Aut minus quos, dolore nobis at aspernatur autem enim.</p>
+            </section>
+        </div>
+        <div class="copy_div">
+            <p class="copy">@ 2023 Web Elevate Solutions / Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

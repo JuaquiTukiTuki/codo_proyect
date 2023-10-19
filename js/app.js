@@ -9,8 +9,8 @@ function mostrar_lista() {
     navbar_lista.classList.toggle('visible')
 }
 
-    function leer_scroll() {
-        
+function leer_scroll() {
+    
 }
 
 // Sección funcionalidades

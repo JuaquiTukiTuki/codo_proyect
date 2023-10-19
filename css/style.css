@@ -27,6 +27,12 @@ html {
     animation: aparicion 1000ms;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 h3 {
     font-weight: 600 !important;
 }
@@ -38,6 +44,11 @@ header {
     flex-direction: column;
     min-height: 100vh;
     animation: desplaza_borde 3s ease 1s 1 normal forwards;
+}
+
+.form_header {
+    min-height: auto;
+    animation: none;
 }
 
 /* Contiene navbar */
@@ -178,8 +189,7 @@ img {
 #inicio,
 #servicios,
 #elegirnos,
-#nuestro_equipo
- {
+#nuestro_equipo {
     /* background-color: var(--base_oscuro); */
     background-color: var(--turquesa);
     color: var(--blanco);
@@ -277,7 +287,8 @@ h2 {
 /* FOOTER */
 footer {
     background-color: var(--azul_fuerte);
-    color: var(--blanco)
+    color: var(--blanco);
+
 }
 
 footer p {
@@ -289,7 +300,7 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 .footer_caja {
@@ -310,15 +321,22 @@ footer p {
 }
 
 /* CONTACTO SECCION */
-.fa-square-facebook,
-.fa-square-twitter,
-.fa-instagram,
-.fa-linkedin {
-    font-size: 50px;
+#anchor_link {
+    color: var(--turquesa);
+}
+
+#anchor_link:hover {
+    color: var(--blanco);
 }
 
 .boton_contacto {
+    font-size: 50px;
+    color: var(--turquesa);
     margin: 10px;
+}
+
+.boton_contacto:hover {
+    color: var(--blanco);
 }
 
 /* CONTACTO UBICACION */
@@ -330,6 +348,7 @@ footer p {
 .copy {
     font-size: 0.8rem;
 }
+
 .copy_div {
     text-align: center;
     background-color: var(--violeta_oscuro);
@@ -339,6 +358,30 @@ footer p {
     padding: 0px 40px;
 }
 
+/* FORMULARIOOOOOO */
+
+form {
+    margin: 20px;
+    width: max-content;
+    align-self: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--celeste);
+}
+
+legend {
+    color: var(--violeta_oscuro);
+}
+
+label {
+    margin: 5px;
+}
+
+
 /* CSS RESPONSIVE (QUERYS) */
 /* Muy grande */
 @media only screen and (min-width: 1200px) {
@@ -347,6 +390,10 @@ footer p {
     header {
         display: flex;
         flex-direction: column;
+    }
+
+    .form_header {
+        max-height: 6rem;
     }
 
     .lista_btn {
@@ -402,6 +449,10 @@ footer p {
     header {
         display: flex;
         flex-direction: column;
+    }
+
+    .form_header {
+        max-height: 6rem;
     }
 
     .lista_btn {
@@ -460,6 +511,10 @@ footer p {
     header {
         display: flex;
         flex-direction: column;
+    }
+
+    .form_header {
+        max-height: 6rem;
     }
 
     .lista_btn {
